@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizarrón</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Pizarrón</h1>
+    </header>
+    <main class="main">
+        <div class="container">
+            <canvas id="canvas" class="canvas" width="800" height="600"></canvas>
+        </div>
+    </main>
+    <footer class="footer">
+        <button id="ddaButton" class="button" onclick="drawDDALine()">DDA</button>
+        <button id="bresenhamButton" class="button" onclick="drawBresenhamLine()">Bresenham</button>
+        <input type="color" id="colorPicker" class="color-picker" value="#000000">
+        <button id="pencilBtn" class="button" onclick="drawPencil()">Lápiz</button>
+        <button id="lineBtn" class="button" onclick="drawLine()">Linea </button>
+    </footer>
+    <script src="linea2.js"></script>
+</body>
+</html>
